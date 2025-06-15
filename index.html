@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Faça seu cadastro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 class="titulo">Faça seu login</h1>
+      <p class="troca_pagina">Não possui uma conta? <a href="registration.html">Clique aqui para criar uma!</a></p>
+    </header>
+
+    <main>
+      <form action="">
+        <label for="nome" class="label_texto">Nome de usuário:</label>
+        <br>
+        <input type="text" name="nome" class="caixa_texto" placeholder="user_exemplo" required>
+        <br><br>
+        <label for="senha" class="label_texto">Senha:</label>
+        <div class="senha">
+          <input type="password" name="senha" class="caixa_texto" id="caixa_senha" placeholder="•••••••••••" required>
+          <img src="imagens/visible.png" alt="" class="status_senha" id="status_senha" onclick="trocarImagemSenha()" style="cursor:pointer;">
+        </div>
+        
+        <input type="submit" name="entrar" id="botao_entrar" value="Entrar">
+      </form>
+    </main>
+    <script src="script.js" defer></script>
+  </body>
+</html>
