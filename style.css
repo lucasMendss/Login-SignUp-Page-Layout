@@ -7,7 +7,8 @@ body {
 }
 
 main {
-  display: flex;
+  display: block;
+  margin-top: 50px;
   /*background-color: rgb(37, 63, 85);*/
   border-top-right-radius: 85px;
   border-top-left-radius: 85px;
@@ -20,6 +21,7 @@ form {
   padding: 15px;
   border: hidden 2px gray;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  width: 300px;
 }
 
 .status_senha {
@@ -30,7 +32,11 @@ form {
 
 .senha {
   display: flex;
-  align-items: center;
+  align-items: center;  
+}
+
+.esqueci_senha {
+  font-size: 12px;
 }
 
 .titulo {
@@ -44,7 +50,9 @@ form {
 }
 
 .troca_pagina {
-  margin-left: 30px;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
 }
 
 a {
@@ -58,17 +66,20 @@ a {
 
 .caixa_texto {
   margin-top: 4px;
-  width: 200px;
+  width: 300px;
   border-style: hidden;
   border-radius: 8px;
   height: 20px;
   border: solid 1px gray;
 }
 
+input {
+  height: 25px;
+}
+
 #botao_entrar {
   display: flex; /* Makes the button a block element */
   margin: auto; /* Auto margins will center the block element */
-  margin-top: 30px;
   height: 40px;
   width: 160px;
   border-radius: 15px;
@@ -78,5 +89,3 @@ a {
   font-size: 20px;
   font-weight: 400;
 }
-
-
