@@ -9,7 +9,6 @@
   <body>
     <header>
       <h1 class="titulo">Faça seu login</h1>
-      <p class="troca_pagina">Não possui uma conta? <a href="registration.html">Clique aqui para criar uma!</a></p>
     </header>
 
     <main>
@@ -23,10 +22,12 @@
           <input type="password" name="senha" class="caixa_texto" id="caixa_senha" placeholder="•••••••••••" required>
           <img src="imagens/visible.png" alt="" class="status_senha" id="status_senha" onclick="trocarImagemSenha()" style="cursor:pointer;">
         </div>
-        
+        <p class="esqueci_senha"><a href="">Esqueci minha senha</a></p>
         <input type="submit" name="entrar" id="botao_entrar" value="Entrar">
       </form>
+      <p class="troca_pagina">Não possui uma conta? <a href="registration.html">Clique aqui para criar uma!</a></p>
     </main>
     <script src="script.js" defer></script>
   </body>
 </html>
+
