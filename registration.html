@@ -9,7 +9,6 @@
   <body>
     <header>
       <h1 class="titulo">Faça seu cadastro</h1>
-      <p class="troca_pagina">Já tem uma conta? <a href="index.html">Clique aqui para entrar!</a></p>
     </header>
 
     <main>
@@ -24,7 +23,7 @@
         <br><br>
         <label for="nascimento" class="label_texto">Data de nascimento:</label>
         <br>
-        <input type="date" name="nascimento" class="caixa_texto" id="caixa_data" min="1900-12-30" max="2015-12-30" required> 
+        <input type="date" name="nascimento" class="caixa_texto"  min="1900-12-30" max="2015-12-30" required> 
         <br><br>
         <label for="senha" class="label_texto">Senha:</label>
         <div class="senha">
@@ -37,9 +36,11 @@
           <input type="password" name="confirmar_senha" class="caixa_texto" id="caixa_confirmar_senha" placeholder="•••••••••••" required>
           <img src="imagens/visible.png" alt="" class="status_senha" id="status_confirmar_senha" onclick="trocarImagemSenhaConf()" style="cursor:pointer;">
         </div>
-        
+        <p class="esqueci_senha"><a href=""></a></p>
+
         <input type="submit" name="entrar" id="botao_entrar" value="Entrar">
       </form>
+      <p class="troca_pagina">Já tem uma conta? <a href="index.html">Clique aqui para entrar!</a></p>
     </main>
     <script src="script.js" defer></script>
   </body>
